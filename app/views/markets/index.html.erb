@@ -1,0 +1,6 @@
+<h1>Farmers Markets of NY</h1>
+<% @markets.each do |market| %>
+  <h2>Market Name: <%= market["market_name"] %></h2>
+  <p>Location: <%= market["location"] %></p>
+  <p>Operating Hours: <%= market["operation_hours"] %></p>
+<% end %>
